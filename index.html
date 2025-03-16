@@ -6,6 +6,7 @@
     <meta name="description" content="Professional Web Developer Portfolio">
     <title>My Portfolio - Web Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -20,21 +21,21 @@
         </nav>
     </header>
 
-    <section id="welcome">
+    <section id="welcome" class="text-center">
         <h2>Welcome to My Personal Website!</h2>
         <p>Number of site visits: <span id="view-count">0</span></p>
     </section>
 
     <section id="about-me">
-        <h2>About Me</h2>
-        <p>I am a professional web developer specializing in front-end development using HTML, CSS, and JavaScript.</p>
+        <h2>👨‍💻 About Me</h2>
+        <p>I'm a web developer skilled in HTML5, CSS, Bootstrap, JavaScript, React, SQL, and Python. I focus on building responsive and interactive web applications.</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <article>
             <figure>
-                <img src="project1.jpg" alt="Project 1 Image">
+                <img src="project1.jpg" alt="Project 1 Image" class="img-fluid">
                 <figcaption>My first project: A modern website</figcaption>
             </figure>
         </article>
@@ -51,30 +52,37 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <div class="contact-container">
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send</button>
+        <div class="contact-container d-flex justify-content-between">
+            <form class="w-75">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Send</button>
             </form>
-            <div id="extra-buttons">
-                <button id="button1" class="btn">Blog</button>
-                <button id="button2" class="btn">YouTube</button>
-                <button id="button3" class="btn">GitHub</button>
-                <button id="button4" class="btn">LinkedIn</button>
+            <div id="extra-buttons" class="d-flex flex-column align-items-start">
+                <button id="button1" class="btn btn-primary mb-2">Blog</button>
+                <button id="button2" class="btn btn-danger mb-2">YouTube</button>
+                <button id="button3" class="btn btn-dark mb-2">GitHub</button>
+                <button id="button4" class="btn btn-info mb-2">LinkedIn</button>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="text-center mt-4">
         <p>&copy; 2025 All rights reserved.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

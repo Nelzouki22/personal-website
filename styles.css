@@ -62,30 +62,6 @@ ul li {
     border: 1px solid #ddd;
 }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-}
-
-form button {
-    background: #006400; /* Dark green color */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #008000; /* Green color */
-}
-
 footer {
     text-align: center;
     margin-top: 20px;
@@ -103,21 +79,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.btn {
-    background-color: #0000ff; /* Blue background */
-    color: #fff; /* White text */
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
 }
 
 @media (max-width: 600px) {
@@ -143,14 +104,6 @@ footer {
 
     ul li {
         padding: 8px;
-    }
-
-    form input, form textarea {
-        padding: 8px;
-    }
-
-    form button {
-        padding: 8px 16px;
     }
 
     .contact-container {
@@ -188,14 +141,6 @@ footer {
     ul li {
         padding: 9px;
     }
-
-    form input, form textarea {
-        padding: 9px;
-    }
-
-    form button {
-        padding: 9px 18px;
-    }
 }
 
 @media (min-width: 1025px) {
@@ -221,13 +166,5 @@ footer {
 
     ul li {
         padding: 10px;
-    }
-
-    form input, form textarea {
-        padding: 10px;
-    }
-
-    form button {
-        padding: 10px 20px;
     }
 }
