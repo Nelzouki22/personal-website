@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #0000ff; /* Blue font color */
+}
+
+header {
+    background: #0000ff; /* Blue background */
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #000; /* Black font color */
+    text-decoration: none;
+}
+
+main {
+    margin: 20px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #006400; /* Dark green color */
+}
+
+#about-me, #projects, #skills, #contact {
+    color: #000; /* Black font color */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f4f4f4;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background: #006400; /* Dark green color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #008000; /* Green color */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#extra-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #0000ff; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    main {
+        margin: 10px 0;
+    }
+
+    section {
+        margin-bottom: 15px;
+    }
+
+    ul li {
+        padding: 8px;
+    }
+
+    form input, form textarea {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 8px 16px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    #extra-buttons {
+        flex-direction: row;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header nav ul {
+        flex-direction: row;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    body {
+        padding: 15px;
+    }
+
+    main {
+        margin: 15px 0;
+    }
+
+    section {
+        margin-bottom: 18px;
+    }
+
+    ul li {
+        padding: 9px;
+    }
+
+    form input, form textarea {
+        padding: 9px;
+    }
+
+    form button {
+        padding: 9px 18px;
+    }
+}
+
+@media (min-width: 1025px) {
+    header nav ul {
+        flex-direction: row;
+    }
+
+    header nav ul li {
+        margin: 0 15px;
+    }
+
+    body {
+        padding: 20px;
+    }
+
+    main {
+        margin: 20px 0;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    ul li {
+        padding: 10px;
+    }
+
+    form input, form textarea {
+        padding: 10px;
+    }
+
+    form button {
+        padding: 10px 20px;
+    }
+}
